@@ -1,0 +1,25 @@
+.leftPane {
+  width: 250px;
+  height: 100%;
+  background: #fff;
+  float: left;
+}
+
+.ms-FocusZone {
+  display: inline;
+}
+
+.Nav-linkText {
+  font-size: 13px;
+  margin-left: 20px;
+}
+
+.ms-Nav-compositeLink {
+  height: 3rem;
+  display: flex;
+  align-items: center;
+}
+
+.ms-Nav-link {
+  height: 3rem;
+}
