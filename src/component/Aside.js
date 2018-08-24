@@ -1,4 +1,5 @@
 import * as React from 'react';
+import { Link } from 'react-router-dom';
 import { Nav } from 'office-ui-fabric-react/lib/Nav';
 import '../css/Aside.css'
 
@@ -8,38 +9,35 @@ const AppDefinition = {
     {
       links: [
         {
-          key: 'ActivityItem',
+          key: 'projectList',
           name: '项目列表',
-          icon: 'AllApps',
-          url: ''
+          icon: 'AllApps'
         },
         {
-          key: 'Breadcrumb',
+          key: 'publicFile',
           name: '公共图片管理',
-          icon: 'Diagnostic',
-          url: ''
+          icon: 'Diagnostic'
         },
         {
-          key: 'Button',
+          key: 'CDN',
           name: 'CDN公共库',
-          icon: 'TestAutoSolid',
-          url: ''
+          icon: 'TestAutoSolid'
         }
       ]
     },
   ]
 };
 
-export class NavFabric extends React.Component {
+export class Aside extends React.Component {
 
   // 以后有需要的时候可以进行样式定制
   _onRenderLink = (link) => {
     return (
-      <span>
+      <Link to={'/' + link.key}>
         <span key={1} className="Nav-linkText">
           { link.name }
         </span>
-      </span>
+      </Link>
     )
   }
   render() {

@@ -1,4 +1,10 @@
 header {
   height: 4rem;
   background: #005a9e;
+  display: flex;
+  align-items: center;
+}
+header h1 {
+    margin-left: 1.5rem;
+    color: #c7e0f4;
 }

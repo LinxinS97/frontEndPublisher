@@ -1,20 +1,24 @@
 import * as React from 'react';
 import { Fabric } from 'office-ui-fabric-react/lib/Fabric';
+import { BrowserRouter as Router } from 'react-router-dom';
 
-import { NavFabric } from './component/Aside';
+import { Aside } from './component/Aside';
 import { Header } from './component/Header';
 import { Main } from './component/Main';
+
 
 import './css/App.css';
 
 export class App extends React.Component {
-  render() {
-    return (
-      <Fabric className='Fabric-Container'>
-        <Header />
-        <NavFabric />
-        <Main />
-      </Fabric>
-    )
-  }
+    render() {
+        return (
+            <Router>
+                <Fabric className='Fabric-Container'>
+                    <Header />
+                    <Aside />
+                    <Main />
+                </Fabric>
+            </Router>
+        )
+    }
 }
