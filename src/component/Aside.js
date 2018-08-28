@@ -1,5 +1,5 @@
 import * as React from 'react';
-import { Link } from 'react-router-dom';
+import { withRouter } from 'react-router';
 import { Nav } from 'office-ui-fabric-react/lib/Nav';
 import '../css/Aside.css'
 
@@ -11,36 +11,59 @@ const AppDefinition = {
         {
           key: 'projectList',
           name: '项目列表',
-          icon: 'AllApps'
+          icon: 'AllApps',
         },
         {
           key: 'publicFile',
           name: '公共图片管理',
-          icon: 'Diagnostic'
+          icon: 'Diagnostic',
         },
         {
           key: 'CDN',
           name: 'CDN公共库',
-          icon: 'TestAutoSolid'
+          icon: 'TestAutoSolid',
         }
       ]
     },
   ]
 };
 
-export class Aside extends React.Component {
+class Aside extends React.Component {
+    constructor(props) {
+        super(props);
+        this.state = {
+            selectedKey: 'projectList'
+        }
+    }
 
-  // 以后有需要的时候可以进行样式定制
-  _onRenderLink = (link) => {
-    return (
-      <Link to={'/' + link.key}>
-        <span key={1} className="Nav-linkText">
-          { link.name }
-        </span>
-      </Link>
-    )
-  }
-  render() {
-    return <Nav groups={AppDefinition.examplePages} onRenderLink={this._onRenderLink} className="leftPane"/>;
-  }
+    _onRenderLink = (link) => {
+        return (
+            <span>
+                <span key={1} className="Nav-linkText">
+                    { link.name }
+                </span>
+            </span>
+        )
+    }
+
+    _onLinkClick = (html, item) => {
+        this.setState({
+            selectedKey: item.key
+        });
+        // 添加进历史，跳转
+        this.props.history.push('/' + item.key);
+    }
+
+    render() {
+        return <Nav 
+            groups={AppDefinition.examplePages} 
+            onRenderLink={this._onRenderLink} 
+            onLinkClick={this._onLinkClick}
+            className="leftPane"
+            selectedKey={this.state.selectedKey}
+        />;
+    }
 }
+// 配置动态路由
+const AsideWithRouter = withRouter(Aside);
+export default AsideWithRouter;

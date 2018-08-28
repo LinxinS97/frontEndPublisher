@@ -1,8 +1,8 @@
 import * as React from 'react';
 import { Fabric } from 'office-ui-fabric-react/lib/Fabric';
-import { BrowserRouter as Router } from 'react-router-dom';
+import { HashRouter as Router } from 'react-router-dom';
 
-import { Aside } from './component/Aside';
+import Aside from './component/Aside';
 import { Header } from './component/Header';
 import { Main } from './component/Main';
 

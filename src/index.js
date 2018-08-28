@@ -8,6 +8,6 @@ import './css/index.css'
 initializeIcons();
 
 ReactDOM.render(
-  <App />,
-  document.getElementById('root')
+    <App />,
+    document.getElementById('root')
 );
