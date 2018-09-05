@@ -8,14 +8,14 @@ main>span>.ms-ResizeGroup:nth-of-type(2) {
     margin-bottom: 0;
 }
 main>span>.ms-Viewport {
-    border-top: 3px solid #000;
+    border-top: 3px solid #0078d4;
 }
 main>span>.ms-Viewport>.ms-DetailsList {
     overflow-x: hidden;
 }
-main>span>.ms-ResizeGroup .ms-CommandBar {
+.ms-CommandBar {
     background: #fff;
 }
-main>span .root-94 {
+button.ms-CommandBarItem-link {
     background: #fff;
 }

@@ -1,7 +1,7 @@
 import * as React from 'react';
 import { withRouter } from 'react-router';
 import { Nav } from 'office-ui-fabric-react/lib/Nav';
-import '../css/Aside.css'
+import '../css/Aside.css';
 
 const AppDefinition = {
   appTitle: 'Fabric - React',
@@ -9,19 +9,24 @@ const AppDefinition = {
     {
       links: [
         {
-          key: 'projectList',
-          name: '项目列表',
-          icon: 'AllApps',
+            key: 'projectList',
+            name: '项目列表',
+            icon: 'AllApps',
         },
         {
-          key: 'publicFile',
-          name: '公共图片管理',
-          icon: 'Diagnostic',
+            key: 'publicFile',
+            name: '公共图片管理',
+            icon: 'Diagnostic',
         },
         {
-          key: 'CDN',
-          name: 'CDN公共库',
-          icon: 'TestAutoSolid',
+            key: 'CDN',
+            name: 'CDN公共库',
+            icon: 'TestAutoSolid',
+        },
+        {
+            key:'guide',
+            name: '使用指南',
+            icon: 'UnknownSolid'
         }
       ]
     },

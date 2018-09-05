@@ -122,12 +122,11 @@ export class ProjectList extends React.Component {
 }
 // ms的创造表头方法
 function _buildColumns() {
-    console.log(_items);
     const columns = buildColumns(_items);
 
     const thumbnailColumn = columns.filter(column => column.name === 'thumbnail')[0];
 
-    // Special case one column's definition.
+    // 特殊的列单独定义
     thumbnailColumn.name = '';
     thumbnailColumn.maxWidth = 50;
     return columns;
