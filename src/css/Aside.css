@@ -21,5 +21,5 @@
 }
 
 .ms-Nav-link {
-    height: 3rem;
+    height: 3rem !important;
 }

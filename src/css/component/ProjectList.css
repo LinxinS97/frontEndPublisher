@@ -14,8 +14,8 @@ main>span>.ms-Viewport>.ms-DetailsList {
     overflow-x: hidden;
 }
 .ms-CommandBar {
-    background: #fff;
+    background: #fff !important;
 }
 button.ms-CommandBarItem-link {
-    background: #fff;
+    background: #fff !important;
 }
