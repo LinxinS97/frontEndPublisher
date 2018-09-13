@@ -12,6 +12,7 @@ main>span>.ms-Viewport {
 }
 main>span>.ms-Viewport>.ms-DetailsList {
     overflow-x: hidden;
+    
 }
 .ms-CommandBar {
     background: #fff !important;
