@@ -57,6 +57,7 @@ class Aside extends React.Component {
         });
         // 添加进历史，跳转
         this.props.history.push('/' + item.key);
+        
     }
 
     render() {
