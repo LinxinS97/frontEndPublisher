@@ -3,7 +3,7 @@ import React, { Component } from 'react';
 class ManageProject extends Component {
     render() {
         return (
-            <span>管理项目</span>
+            <span>项目管理</span>
         )
     }
 }

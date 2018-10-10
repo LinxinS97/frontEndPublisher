@@ -31,12 +31,6 @@ class AppAside extends Component {
                     <Menu.Item key="createProject"><Icon type="folder-add" theme="outlined" />新建项目</Menu.Item>
                     <Menu.Item key="publicFile"><Icon type="folder-open" theme="outlined" />公共文件管理</Menu.Item>
                     <Menu.Item key="readme"><Icon type="info-circle" theme="outlined" />使用说明</Menu.Item>
-                    {/* <SubMenu key="sub2" title={<span><Icon type="laptop" />subnav 2</span>}>
-                        <Menu.Item key="5">option5</Menu.Item>
-                        <Menu.Item key="6">option6</Menu.Item>
-                        <Menu.Item key="7">option7</Menu.Item>
-                        <Menu.Item key="8">option8</Menu.Item>
-                    </SubMenu> */}
                 </Menu>
             </Sider>
         )

@@ -11,7 +11,7 @@ const { Content } = Layout;
 class AppContent extends Component {
     render() {
         return (
-            <Content style={{ padding: '0 24px', minHeight: 280 }}>
+            <Content style={{ padding: '0 50px', minHeight: 280 }}>
                 <Route exact path="/" component={ ManageProject }/>
                 <Route path="/CreateProject" component={ CreateProject }/>
                 <Route path="/ManageProject" component={ ManageProject }/>
