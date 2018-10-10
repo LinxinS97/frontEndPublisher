@@ -13,7 +13,7 @@ class AppHeader extends Component {
                     defaultSelectedKeys={['1']}
                     style={{ lineHeight: '64px' }}
                 >
-                    <Menu.Item key="1">Home</Menu.Item>
+                    <Menu.Item key="1">主页</Menu.Item>
                     <Menu.Item key="2">新建项目</Menu.Item>
                 </Menu>
             </Header>
