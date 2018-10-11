@@ -43,7 +43,7 @@ class CreateProject extends Component {
     }
     render() {
         return (
-            <div>
+            <main>
                 <h1>新建项目</h1>
                 <Form className="create-form" onSubmit={ this._handleSubmit }>
                     <Row gutter={24}>
@@ -73,7 +73,7 @@ class CreateProject extends Component {
                                     defaultValue="0"
                                 >
                                     <Option value="0">前端项目</Option>
-                                    <Option value="1">node项目</Option>
+                                    <Option value="1">node项目（制作中）</Option>
                                 </Select>
                             </FormItem>
                         </Col>
@@ -96,7 +96,7 @@ class CreateProject extends Component {
                         </Button>
                     </FormItem>
                 </Form>
-            </div>
+            </main>
         )
     }
 }
